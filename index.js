@@ -8,15 +8,11 @@ var rl = readline.createInterface({
   output: process.stdout
 })
 
-var urls = [
-  'https://wikileaks.org/dnc-emails/emailid/13684'
-]
-
 fs.writeFileSync('data.xsl', '', 'utf8')
-
-function get (url, callback) {
-  rl.question('What is your reddit username? ', (name) => {
-    rl.close()
+var urls = fs.readFileSync('urls.txt', 'utf8').split('\n')
+rl.question('What is your reddit username? ', (name) => {
+  rl.close()
+  function get (url, callback) {
     var nightmare = Nightmare({
       show: true,
       fullscreen: true,
@@ -87,11 +83,11 @@ function get (url, callback) {
         fs.appendFile('data.xls', line, 'utf8', callback)
       })
       .catch(err => callback(err))
-  })
-}
+  }
 
-async.mapSeries(urls, get, (err, results) => {
-  if (err) return console.log(err)
-  console.log()
-  console.log(`Open this file: "${path.join(__dirname, 'data.xls')}" and paste the contents into the google doc."`)
+  async.mapSeries(urls, get, (err, results) => {
+    if (err) return console.log(err)
+    console.log()
+    console.log(`Open this file: "${path.join(__dirname, 'data.xls')}" and paste the contents into the google doc."`)
+  })
 })

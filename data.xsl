@@ -1,1 +1,0 @@
-justinmchase	2016-05-10 13:28	Hi Zac / Possible DNC Conf Call Tomorrow	Picking negative line from pro trump article	PaustenbachM@dnc.org	zpetkanas@hillaryclinton.com	No	No	No	Yes	No	No	No
