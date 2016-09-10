@@ -28,7 +28,7 @@ Enter your username and then follow the instrutions in the following browser win
 
 ## Uploading The Data
 
-Once you have gathered data for all of the urls, the data will be copied into a file called `data.xsl`. Open that file and copy + paste into the google doc.
+Once you have gathered data for all of the urls, the data will be copied into a file called `data.xls`. Open that file and copy + paste into the google doc.
 
 Next grab more urls and repeat!
 
