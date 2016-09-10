@@ -14,7 +14,7 @@ Use git bash to run all commands even on windows.
 ```
 $ git clone git@github.com:justinmchase/dncleak-dataentry.git
 $ cd dncleak-dataentry
-$ npm Install
+$ npm install
 ```
 
 Next, open up `urls.txt` in this folder and paste a set of urls from [the google doc](https://docs.google.com/spreadsheets/d/1ORUwiu-JsJ15xqgIGeP-P14WJULt9B5fZRNzQaPDxjk/edit#gid=0). Now run the app.
