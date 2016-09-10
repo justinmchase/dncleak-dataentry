@@ -8,7 +8,7 @@ var rl = readline.createInterface({
   output: process.stdout
 })
 
-fs.writeFileSync('data.xsl', '', 'utf8')
+fs.writeFileSync('data.xls', '', 'utf8')
 var urls = fs.readFileSync('urls.txt', 'utf8').split('\n')
 rl.question('What is your reddit username? ', (name) => {
   rl.close()
